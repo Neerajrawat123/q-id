@@ -15,6 +15,10 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors:{
+        'blue':'#6FA6FD',
+        'col-contact': '#B1B1B1',
+        'form': '#B8B8B8',
+        'form-bord': '#5E5E5E',
         'main-text': '#7A7A7A',
         'grid-col': '#000000BA',
         'card-1': '#121E13',
@@ -22,6 +26,9 @@ module.exports = {
         'card-bord':'#FFFFFF30',
         'grad-col': '#93fb70',
         'sec-text-col' : '#797878F5'
+      },
+      fontFamily: {
+        'primary-font': ['Raleway', 'sans-serif'],
       },
       boxShadow:{
         'card-1-shad': '-4px -13px 99px -29px rgba(77.54021739130434, 225.75, 0, 0.34)',
