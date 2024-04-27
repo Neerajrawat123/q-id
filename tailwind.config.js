@@ -25,7 +25,8 @@ module.exports = {
         'card-2' : '#241b08ad',
         'card-bord':'#FFFFFF30',
         'grad-col': '#93fb70',
-        'sec-text-col' : '#797878F5'
+        'sec-text-col' : '#797878F5',
+        'footer-text': '#AEAEAE'
       },
       fontFamily: {
         'primary-font': ['Raleway', 'sans-serif'],
