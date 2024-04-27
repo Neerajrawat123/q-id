@@ -19,7 +19,9 @@ module.exports = {
         'grid-col': '#000000BA',
         'card-1': '#121E13',
         'card-2' : '#241b08ad',
-        'card-bord':'#FFFFFF30;'
+        'card-bord':'#FFFFFF30',
+        'grad-col': '#93fb70',
+        'sec-text-col' : '#797878F5'
       },
       boxShadow:{
         'card-1-shad': '-4px -13px 99px -29px rgba(77.54021739130434, 225.75, 0, 0.34)',
