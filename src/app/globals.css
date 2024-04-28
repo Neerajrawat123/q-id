@@ -8,3 +8,6 @@
 
 
 
+.card-3d{
+  transform: perspective(0px) rotateX(0.01deg) rotateY(-0.02deg);
+}
