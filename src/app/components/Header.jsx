@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Carousal from "./Carousal";
 
 function Header() {
   return (
@@ -248,6 +249,27 @@ function Header() {
                   </svg>
                 </span>
               </Link>              </div>
+            </div>
+
+
+            {/* carousal sec */}
+
+
+            <div className=" text-white mt-20">
+              <div className="flex flex-col justify-center items-center">
+                <h2  className="font-bold text-[64px]">
+                  <span>Identified </span>
+                   by qid
+                </h2>
+                <h3 className="font-semibold text-[24px] mt-3">Let’s dive into the real stories of how our service has touched the lives of our customers.</h3>
+              </div>
+              <Carousal />
+
+
+              <div>
+
+              </div>
+
             </div>
           </div>
         </div>
