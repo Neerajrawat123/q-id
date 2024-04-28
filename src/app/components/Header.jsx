@@ -151,41 +151,104 @@ function Header() {
         </div>
 
         <div className="bg-secondary-pattern bg-[length:100%] bg-blend-overlay font-primary-font bg-grid-col w-full pt-3 pb-9  ">
-        <div className=" w-[1140px]   mx-auto justify-center  ">
+          <div className=" w-[1140px]   mx-auto justify-center  ">
+            <div className="">
+              <div className="w-full flex  gap-5">
+                <div className="flex flex-col border w-[31.5%] h-full bg-black  border-card-bord  p-[25px] gap-[20px]  rounded-[30px]">
+                  <div className="w-full overflow-hidden rounded-[30px]">
+                    <img
+                      src="/images/qr-code-12-1024x1024.png"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                  <div className="flex flex-col text-white gap-5 ">
+                    <h2 className="font-semibold text-[24px]">
+                      Collect IDs with QR
+                    </h2>
+                    <h3 className="font-semibold text-sec-text-col mb-[14px]">
+                      Easy to setup QR code stand
+                    </h3>
+                  </div>
+                </div>
 
-          <div className="">
-            <div className="w-full flex  gap-5">
-
-
-
-            <div className="flex flex-col border w-[31.5%] h-full bg-black  border-card-bord  p-[25px] gap-[20px]  rounded-[30px]">
-              <div className="w-full overflow-hidden rounded-[30px]">
-                <img src="/images/qr-code-12-1024x1024.png" alt="" srcset="" />
+                <div className="p-[24px] flex flex-col gap-[20px] border border-card-bord rounded-[25px] bg-black w-full text-white">
+                  <div className="p-[10px]">
+                    {" "}
+                    <h2 className="text-[25px] font-semibold  leading-none">
+                      Business Analytics
+                    </h2>
+                  </div>
+                  <div className="rounded-[25px]">
+                    <img src="/images/Asset-7.png" alt="" />
+                  </div>
+                  <div>
+                    <h3 className=" font-semibold text-sec-text-col">
+                      Unlock the power of data with qid – your ultimate tool for
+                      comprehensive business analytics.{" "}
+                    </h3>
+                  </div>
+                </div>
               </div>
-              <div className="flex flex-col text-white gap-5 ">
-                <h2 className="font-semibold text-[24px]">
-                Collect IDs with QR
-                </h2>
-                <h3 className="font-semibold text-sec-text-col mb-[14px]">Easy to setup QR code stand</h3>
+              <div className="flex gap-5">
+                <div className="flex flex-col border w-[31.5%] h-full bg-black  border-card-bord  p-[25px] gap-[20px]  rounded-[30px]">
+                  <div className="flex flex-col text-white gap-5 ">
+                    <h2 className="font-semibold text-[24px]">
+                      Customized Interface
+                    </h2>
+                    <h3 className="font-semibold text-sec-text-col mb-[14px">
+                      Tailor qid’s interface to perfectly align with your brand,
+                      creating a seamless and personalized user experience.
+                    </h3>
+                  </div>
+                </div>
+                <div className="flex gap-5 w-full mt-5">
+                  <div className="flex flex-col border w-1/2 h-full bg-black  border-card-bord  p-[25px] gap-[20px]  rounded-[30px]">
+                    <div className="flex flex-col text-white gap-5 ">
+                      <h2 className="font-semibold text-[24px]">
+                        Developer APIs
+                      </h2>
+                      <h3 className="font-semibold text-sec-text-col mb-[14px">
+                        Supercharge your applications with qid’s robust
+                        developer APIs, enabling you to effortlessly leverage
+                        the full potential of our platform and create unique,
+                        personalized experiences for your users.{" "}
+                      </h3>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col border w-1/2 h-full bg-black  border-card-bord  p-[25px] gap-[20px]  rounded-[30px]">
+                    <div className="flex flex-col text-white gap-5 ">
+                      <h2 className="font-semibold text-[24px]">
+                        One-Click C-Form{" "}
+                      </h2>
+                      <h3 className="font-semibold text-sec-text-col mb-[14px">
+                        Simplify C-Form filling with qid’s 1-Click solution,
+                        automating the process and saving you time while
+                        ensuring compliance.
+                      </h3>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <div className="flex items-center mt-2 font-primary-font justify-center">
+              <Link
+                className="font-semibold text-lg leading-tight px-6 max-w-fit py-5 rounded-[50px] bg-white flex gap-2 items-center mt-6 text-black"
+                href={"/"}
+              >
+                <span>Create Bussiness account</span>
+                <span className="w-4 h-4">
+                  <svg
+                    aria-hidden="true"
+                    class="e-font-icon-svg e-fas-chevron-circle-right w-4 h-4"
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"></path>
+                  </svg>
+                </span>
+              </Link>              </div>
             </div>
-            <div className="p-[24px] flex flex-col gap-[20px] border border-card-bord rounded-[25px] bg-black w-full text-white">
-              <div className="p-[10px]"> <h2 className="text-[25px] font-semibold  leading-none">Business Analytics</h2></div>
-              <div className="rounded-[25px]">
-                <img src="/images/Asset-7.png" alt="" />
-              </div>
-              <div>
-                <h3 className=" font-semibold text-sec-text-col">Unlock the power of data with qid – your ultimate tool for comprehensive business analytics. </h3>
-              </div>
-            </div>
-            </div>
-            <div className="flex gap-5">
-
-            </div>
-
-
-
-          </div>
           </div>
         </div>
       </div>
