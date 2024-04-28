@@ -10,6 +10,7 @@ module.exports = {
       backgroundImage: {
         'main-pattern': "url('/images/fgh-bg-1.png')",
         'secondary-pattern': "url('/images/grid-for-video.png')",
+        'tertiary-pattern' : "url('/images/qd-ffvc-2-sdf.png')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
@@ -26,7 +27,8 @@ module.exports = {
         'card-bord':'#FFFFFF30',
         'grad-col': '#93fb70',
         'sec-text-col' : '#797878F5',
-        'footer-text': '#AEAEAE'
+        'footer-text': '#AEAEAE',
+        'p-col': '#FFFFFFB3'
       },
       fontFamily: {
         'primary-font': ['Raleway', 'sans-serif'],

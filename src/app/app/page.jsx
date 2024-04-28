@@ -10,7 +10,7 @@ function App() {
         <div className="w-[1140px] mx-auto px-10 ">
           <div className="flex h-screen justify-center items-center">
             <div className="flex">
-              <div className="flex flex-col justify-center items-center gap-7 w-1/2">
+              <div className="flex flex-col justify-center   gap-7 w-1/2">
                 <div>
                   <h2 className="text-[58px] font-extrabold text-black">
                     Get the qid App
@@ -38,7 +38,7 @@ function App() {
                       </a>
                     </div>                </div>
               </div>
-              <div className="w-1/2  py-12 mt-12">
+              <div className="w-1/2  py-12 mt-8">
                 <img
                 className="w-[95%] h-[95%] object-contain"
                 src="/images/Asset-16.png"

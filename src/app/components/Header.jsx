@@ -20,12 +20,15 @@ function Header() {
         </div>
       </div>
       <div className="bg-secondary-pattern bg-[length:100%] bg-blend-overlay bg-grid-col w-full pt-20  ">
-        <div className=" w-[1040px] mx-auto justify-center  ">
+        <div className=" w-[1140px] px-1  mx-auto justify-center  ">
           <div className="flex gap-10 justify-center">
             <div className="pt-64 ">
-              <h2 className="text-6xl font-bold">
+              <h2 className="text-[70px] font-bold leading-[4.5rem] text-white">
                 <span>secure,</span>
-                easy, and with you
+                easy,
+                <br />
+                and always
+                <br /> with you
               </h2>
               <Link
                 className="font-semibold text-lg px-6 max-w-fit py-5 rounded-[50px] bg-white flex gap-1 items-center mt-6 text-black"
@@ -54,7 +57,7 @@ function Header() {
           </div>
           <div className="flex gap-7   mt-[-35px] ">
             <div className="mb-5 ">
-              <h2 className="text-[55px] leading-tight font-bold">
+              <h2 className="text-[55px] leading-tight text-white font-bold">
                 Two Base elements of Identity ecosystem
               </h2>
             </div>
@@ -63,7 +66,7 @@ function Header() {
                 <h2 className="font-semibold leading-tight text-[51px]  text-card-bord">
                   1
                 </h2>
-                <h2 className="font-semibold text-[41px] leading-normal mb-3 mt-1 ">
+                <h2 className="font-semibold text-[41px] text-white leading-normal mb-3 mt-1 ">
                   Managing
                 </h2>
                 <p className="text-main-text">
@@ -75,7 +78,7 @@ function Header() {
                 <h2 className="font-semibold text-[51px] leading-tight  text-card-bord">
                   2
                 </h2>
-                <h2 className="font-semibold text-[41px] mb-3 mt-1 ">
+                <h2 className=" text-white font-semibold text-[41px] mb-3 mt-1 ">
                   Sharing
                 </h2>
                 <p className="text-main-text">
@@ -86,7 +89,7 @@ function Header() {
             </div>
           </div>
 
-          <div className="flex gap-4">
+          <div className="flex gap-5 font-primary-font">
             <div className="flex gap-4 flex-col justify-center items-center w-24">
               <div className="w-1 h-[179px] bg-gradient-to-b from-black from-30% to-grad-col"></div>
               <span className="h-[1px] w-12 bg-gray-600"> </span>
@@ -96,7 +99,7 @@ function Header() {
             </div>
             <div className="flex flex-col justify-between pt-32 pb-10">
               <div>
-                <h2 className="text-[40px] font-bold leading-10">
+                <h2 className="text-[40px] font-bold text-p-col leading-10">
                   Your true identity,
                   <br />
                   <span className="bg-gradient-to-r text-transparent bg-clip-text from-green-200 to-green-500">
@@ -104,7 +107,7 @@ function Header() {
                   </span>{" "}
                   with ease.
                 </h2>
-                <p className="mt-5 text-sec-text-col font-semibold text-2xl font-sans leading-[26px]">
+                <p className="mt-5 text-sec-text-col font-semibold text-[24px]  leading-[24px]">
                   With qid, managing your IDs has never been easier. You can
                   store and access all your IDs in one place, share them
                   securely with others, and even get them verified with just a
@@ -115,7 +118,7 @@ function Header() {
               </div>
 
               <div>
-                <h2 className="text-[40px] font-bold leading-10">
+                <h2 className="text-[40px] font-bold text-p-col leading-10">
                   <span className="bg-gradient-to-r text-transparent bg-clip-text from-orange-200 to-orange-500">
                     share
                   </span>{" "}
@@ -124,7 +127,7 @@ function Header() {
                   qid has got you covered!
                 </h2>
 
-                <p className="mt-5 text-sec-text-col font-semibold text-2xl font-sans leading-[26px]">
+                <p className="mt-5 text-sec-text-col font-semibold text-[24px]  leading-[24px]">
                   Sharing IDs with qid is simple and convenient. Just add the ID
                   to your qid profile and share it with anyone, anytime,
                   anywhere. No need to carry physical IDs or worry about losing
@@ -134,9 +137,56 @@ function Header() {
             </div>
           </div>
         </div>
+        <div className="h-[80vhvh] w-[100vw] mt-[] min-h-screen font-primary-font  bg-cover bg-tertiary-pattern bg-[length:100%] bg-center pt-[6px]">
+          <div className="flex justify-center ">
+            <h2 className="font-bold text-[77px] text-white ">
+              qid for Bussiness
+            </h2>
+          </div>
+          <div className="flex justify-center ">
+            <h2 className="font-bold text-[30px] text-white ">
+              manage all your IDs with one QR
+            </h2>
+          </div>
+        </div>
 
-        <div>
-          <div></div>
+        <div className="bg-secondary-pattern bg-[length:100%] bg-blend-overlay font-primary-font bg-grid-col w-full pt-3 pb-9  ">
+        <div className=" w-[1140px]   mx-auto justify-center  ">
+
+          <div className="">
+            <div className="w-full flex  gap-5">
+
+
+
+            <div className="flex flex-col border w-[31.5%] h-full bg-black  border-card-bord  p-[25px] gap-[20px]  rounded-[30px]">
+              <div className="w-full overflow-hidden rounded-[30px]">
+                <img src="/images/qr-code-12-1024x1024.png" alt="" srcset="" />
+              </div>
+              <div className="flex flex-col text-white gap-5 ">
+                <h2 className="font-semibold text-[24px]">
+                Collect IDs with QR
+                </h2>
+                <h3 className="font-semibold text-sec-text-col mb-[14px]">Easy to setup QR code stand</h3>
+              </div>
+            </div>
+            <div className="p-[24px] flex flex-col gap-[20px] border border-card-bord rounded-[25px] bg-black w-full text-white">
+              <div className="p-[10px]"> <h2 className="text-[25px] font-semibold  leading-none">Business Analytics</h2></div>
+              <div className="rounded-[25px]">
+                <img src="/images/Asset-7.png" alt="" />
+              </div>
+              <div>
+                <h3 className=" font-semibold text-sec-text-col">Unlock the power of data with qid – your ultimate tool for comprehensive business analytics. </h3>
+              </div>
+            </div>
+            </div>
+            <div className="flex gap-5">
+
+            </div>
+
+
+
+          </div>
+          </div>
         </div>
       </div>
     </div>
