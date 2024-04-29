@@ -1,16 +1,33 @@
-import React from "react";
+'use client'
+import React, { useState } from "react";
 import Navigation from "../components/navigation";
 
 function Contact() {
+
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState('')
+  const [error, setError] = useState([]);
+  const [success, setSuccess] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+
+    // handle api to submit form
+
+  }
+
   return (
     <>
       <Navigation />
-      <main className="bg-secondary-pattern bg-[length:100%] font-primary-font bg-blend-overlay bg-grid-col mt-20">
-        <div className="w-[1140px] pl-[60px]  pr-4 mx-auto  h-[90vh] flex items-center">
-          <div className="flex gap-2">
-            <div className="flex flex-col gap-3 w-[51%] pt-4">
+      <main className="bg-secondary-pattern text-white bg-[length:100%] font-primary-font bg-blend-overlay bg-grid-col mt-20 px-[10px]">
+        <div className="max-w-[1140px] pb-20 md:h-screen w-full  mx-auto flex flex-wrap items-center">
+          <div className="md:flex flex-wrap  px-5  gap-2 mt-5">
+            <div className="flex flex-col gap-3 md:w-[51%] py-5 w-full  pt-4">
               <div>
-                <h2 className="font-semibold text-[80px] leading-tight">
+                <h2 className="font-semibold text-[50px] md:text-[80px] leading-tight">
                   Contact us
                 </h2>
               </div>
@@ -57,8 +74,8 @@ function Contact() {
               </div>
             </div>
 
-            <div className="border-[1px] border-form-bord text-[15px] bg-black text-form-bord  w-[43%] rounded-[20px] p-[50px]">
-              <form className="flex flex-col gap-6" action="" method="post">
+            <div className="border-[1px] border-form-bord text-[15px] bg-black text-form-bord w-full md:w-[45%] sm:w-[80%] rounded-[20px] p-[50px]">
+              <form className="flex flex-col gap-6" onSubmit={handleSubmit} method="post">
                 <div className="flex flex-col gap-1">
                   <label className="text-form " htmlFor="name">
                     Name <span className="text-red-900">*</span>
@@ -68,10 +85,12 @@ function Contact() {
                     type="text"
                     name="name"
                     id="name"
+                    value={name}
+                    onChange={() => setName(e.target.value)}
                   />
                 </div>
                 <div className="flex gap-4 w-full ">
-                  <div className="flex flex-col">
+                  <div className="flex flex-col flex-row">
                     <label className="text-form" htmlFor="phone">
                       Phone no <span className="text-red-900">*</span>
                     </label>
@@ -81,6 +100,8 @@ function Contact() {
                       name="phone"
                       id="phone"
                       inputMode="numeric"
+                      value={phone}
+                      onChange={() => setPhone(e.target.value)}
                     />
                   </div>
                   <div className="flex flex-col ">
@@ -92,6 +113,8 @@ function Contact() {
                       type="email"
                       name="email"
                       id="email"
+                      value={email}
+                      onChange={() => setEmail(e.target.value)}
                     />
                   </div>
                 </div>
@@ -104,6 +127,8 @@ function Contact() {
                     type="text"
                     name="message"
                     id="message"
+                    value={message}
+                    onChange={() => setMessage(e.target.value)}
                   />
                 </div>
                 <div className="w-full flex justify-end ">

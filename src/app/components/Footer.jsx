@@ -17,13 +17,13 @@ function Footer() {
                 </h2>
                 <ul className="flex flex-col  text-footer-text leading-tight">
                   <li className="py-[13px]">
-                    <Link href="">Android</Link>
+                    <Link href="https://play.google.com/store/apps/details?id=com.quickids.digilocker.qid">Android</Link>
                   </li>
                   <li className="py-[13px]">
-                    <Link href="">Ios</Link>
+                    <Link href="https://apps.apple.com/us/app/qid-quick-id/id1629041779">Ios</Link>
                   </li>
                   <li className="py-[13px]">
-                    <Link href="">C-form Pro Plugin</Link>
+                    <Link href="https://chromewebstore.google.com/detail/afghjacdcfhoikcccemlchhmokfgobpj">C-form Pro Plugin</Link>
                   </li>
                   <li className="py-[13px]">
                     <Link href="">Book a demo</Link>

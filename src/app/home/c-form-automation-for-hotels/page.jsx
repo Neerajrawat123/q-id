@@ -9,16 +9,16 @@ function CForm() {
 
       <main className=" bg-secondary-pattern text-white bg-[length:100%] pb-20 bg-blend-overlay bg-grid-col mt-20 font-primary-font">
         <div>
-          <div className="  pr-1   pl-8 max-w-[1140px] w-full md:p-0   mx-auto flex flex-col ">
-            <div className="flex gap-3 flex-col mt-10">
-              <h2 className="font-bold text-[51px] leading-tight">
+          <div className="  pr-1   pl-8 max-w-[1140px] w-full px-5 pt-14    mx-auto flex flex-col ">
+            <div className="flex gap-4 flex-col mt-10">
+              <h2 className="font-bold text-[51px] md:text-[71px] leading-none">
                 <span>C-Form </span>Automation{" "}
               </h2>
-              <h3 className="font-semibold text-[29px]">
+              <h3 className="font-semibold leading-none text-[29px]">
                 Say Goodbye to Manual C-Forms
               </h3>
             </div>
-            <div className="flex gap-5">
+            <div className="flex flex-col sm:flex-row">
               <Link
                 className="font-semibold text-lg leading-tight px-6 max-w-fit py-5 rounded-[50px] bg-white flex gap-2 items-center mt-6 text-black"
                 href={"/"}
@@ -45,7 +45,7 @@ function CForm() {
             </div>
           </div>
           <div>
-            <div className="mt-14 px-5 md:hidden">
+            <div className="mt-10 px-5 md:hidden">
               <img src="/images/c-form-long-1222x2048.png" alt="" />
             </div>
 
@@ -58,12 +58,12 @@ function CForm() {
         {/* card section */}
         <div className="max-w-[1140px] font-primary-font w-full  mx-auto py-2">
           <div className="flex flex-col gap-10">
-            <div>
-              <h2 className="font-bold md:text-[74px] text-[40px]">
+            <div className="px-10 py-2">
+              <h2 className="font-bold md:text-[74px] leading-tight text-[40px]">
                 Trust us, it's truly a matter of just <span>one click</span>.
               </h2>
               <div>
-                <div className="grid grid-cols-3 gap-5 flex-col md:flex-row mt-20">
+                <div className="grid md:grid-cols-3 grid-flow-row gap-5  mt-20">
                   <div className="p-[30px] border border-card-bord rounded-[30px]">
                     <div>
                       <h2 className="font-semibold leading-tight text-[32px]">
@@ -96,8 +96,8 @@ function CForm() {
         </div>
 
         <div className="max-w-[1140px] w-full font-primary-font flex-wrap-reverse px-8 md:px-2 text-white pr-12 pt-16  mx-auto py-2">
-          <div className="flex w-full  gap-6">
-            <div className="flex sm:w-3/4 justify-center  flex-col pt-3">
+          <div className="flex w-full  md:flex-row flex-wrap-reverse md:flex-nowrap justify-end  gap-6">
+            <div className="flex md:w-2/3  w-full justify-center flex-col pt-3">
               <div className="flex  flex-col gap-4">
                 <h2 className="font-semibold leading-none md:text-[46px] text-[36px]">
                   Elevate C-Form Processing with qid's State-of-the-Art Chrome
@@ -127,7 +127,7 @@ function CForm() {
                 </Link>
               </div>
             </div>
-            <div className="flex w-3/5  justify-end card-3d md:px-16   ">
+            <div className="flex sm:w-4/5 md:w-1/3 w-full pl-6 md:p-0 justify-end card-3d  ">
               <div className="  rounded-2xl overflow-hidden">
                 <img
                   src="/images/Screenshot-2023-07-27-at-12.23.51-PM.png"
@@ -138,7 +138,7 @@ function CForm() {
           </div>
         </div>
 
-        <div className="max-w-[1140px] mx-auto w-full font-primary-font mt-5 overflow-hidden bg-black z-20  text-white">
+        <div className="max-w-[1140px] mx-auto w-full font-primary-font px-7 mt-5 overflow-hidden bg-black z-20  text-white">
           <div className="p-[30px] rounded-[30px] flex flex-col border gap-6 border-card-bord">
             <div>
               <h2 className="font-semibold leading-none text-[46px]">What is C-Form?</h2>

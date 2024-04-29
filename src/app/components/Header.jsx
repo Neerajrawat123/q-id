@@ -253,6 +253,9 @@ function Header() {
 
 
             {/* carousal sec */}
+            <div className=" max-w-[1140px] w-full   mx-auto justify-center  ">
+
+
 
 
             <div className=" text-white mt-20">
@@ -263,7 +266,10 @@ function Header() {
                 </h2>
                 <h3 className="font-semibold text-[24px] mt-3">Let’s dive into the real stories of how our service has touched the lives of our customers.</h3>
               </div>
+              <div className="mt-14">
+
               <Carousal />
+              </div>
 
 
               <div>
@@ -271,6 +277,8 @@ function Header() {
               </div>
 
             </div>
+            </div>
+
           </div>
         </div>
       </div>

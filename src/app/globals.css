@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+.swiper{
+  width: 93% !important;
+  position: static !important;
+}
+.swiper-btn-prev{
+  left: 0px;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  content: "" !important;
+}
 
 @tailwind base;
 @tailwind components;
@@ -11,3 +22,4 @@
 .card-3d{
   transform: perspective(0px) rotateX(0.01deg) rotateY(-0.02deg);
 }
+
