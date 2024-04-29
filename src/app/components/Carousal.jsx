@@ -19,7 +19,14 @@ export default function Carousal() {
       modules={[ Navigation]}
       loop='true'
       spaceBetween={10}
-      slidesPerView={3}
+      slidesPerView={1}
+      breakpoints={{
+       
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+      }}
       navigation
     >
       <SwiperSlide><Card /></SwiperSlide>

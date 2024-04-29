@@ -16,6 +16,7 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors:{
+        'logo-col': '#CECECE',
         'blue':'#6FA6FD',
         'col-contact': '#B1B1B1',
         'form': '#B8B8B8',
@@ -28,7 +29,10 @@ module.exports = {
         'grad-col': '#93fb70',
         'sec-text-col' : '#797878F5',
         'footer-text': '#AEAEAE',
-        'p-col': '#FFFFFFB3'
+        'p-col': '#FFFFFFB3',
+        'green-grad-1': '#93FB70',
+        'green-grad-2': '#4D7603',
+        'orange-grad-1': '#CF5924 ',
       },
       fontFamily: {
         'primary-font': ['Raleway', 'sans-serif'],
