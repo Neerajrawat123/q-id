@@ -10,23 +10,23 @@ function Footer() {
             <div className="w-3/5 items-center mt-10 mb-10">
               <h2 className="text-[4rem] text-white font-bold italic">qid</h2>
             </div>
-            <div className="flex sm:w-2/5 flex-col sm:flex-row justify-between gap-4">
+            <div className="flex sm:w-3/5 flex-col sm:flex-row justify-between gap-4 md:gap-1">
               <div className="p-[10px]">
                 <h2 className=" text-[1.5rem] font-semibold mb-3 capitalize">
                   Download app
                 </h2>
-                <ul className="flex flex-col  text-footer-text leading-tight">
-                  <li className="py-[13px]">
+                <ul className="flex flex-col font-semibold  text-footer-text leading-tight">
+                  <li className="py-[13px] hover:text-white">
                     <Link href="https://play.google.com/store/apps/details?id=com.quickids.digilocker.qid">Android</Link>
                   </li>
-                  <li className="py-[13px]">
+                  <li className="py-[13px] hover:text-white">
                     <Link href="https://apps.apple.com/us/app/qid-quick-id/id1629041779">Ios</Link>
                   </li>
-                  <li className="py-[13px]">
+                  <li className="py-[13px] hover:text-white">
                     <Link href="https://chromewebstore.google.com/detail/afghjacdcfhoikcccemlchhmokfgobpj">C-form Pro Plugin</Link>
                   </li>
-                  <li className="py-[13px]">
-                    <Link href="">Book a demo</Link>
+                  <li className="py-[13px] hover:text-white">
+                    <Link href="book-demo">Book a demo</Link>
                   </li>
                 </ul>
               </div>
@@ -35,20 +35,20 @@ function Footer() {
                 <h2 className=" text-[1.5rem] font-semibold mb-3 capitalize">
                   Legal
                 </h2>
-                <ul className="flex flex-col  text-footer-text leading-tight">
-                  <li className="py-[13px]">
+                <ul className="flex flex-col font-semibold  text-footer-text leading-tight">
+                  <li className="py-[13px] hover:text-white">
                     <Link href="">Privacy Policy</Link>
                   </li>
-                  <li className="py-[13px]">
+                  <li className="py-[13px] hover:text-white">
                     <Link href="">Terms of Use</Link>
                   </li>
-                  <li className="py-[13px]">
+                  <li className="py-[13px] hover:text-white">
                     <Link href="">
                       Cancellation and Refund
                       <br /> Policy
                     </Link>
                   </li>
-                  <li className="py-[13px]">
+                  <li className="py-[13px] hover:text-white">
                     <Link href="">
                       Shipping and Return
                       <br /> Policy

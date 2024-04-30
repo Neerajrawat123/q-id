@@ -6,7 +6,6 @@ import { usePathname} from 'next/navigation';
 
 export default function Navigation() {
     const path = usePathname();
-  console.log(path);
   const [isExpand, setIsExpand] = useState(false);
   const handleExpand = (e) => {
     e.preventDefault();

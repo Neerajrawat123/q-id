@@ -3,11 +3,9 @@ import React from "react";
 import Navigation from "../../components/navigation";
 import Link from "next/link";
 import Footer from "@/app/components/Footer";
-import { usePathname} from 'next/navigation';
 
 function CForm() {
-  const path = usePathname();
-  console.log(path);
+  
   return (
     <>
       <Navigation />
@@ -17,7 +15,9 @@ function CForm() {
           <div className="  pr-1   pl-8 max-w-[1140px] w-full px-5 pt-14    mx-auto flex flex-col ">
             <div className="flex gap-4 flex-col mt-10">
               <h2 className="font-bold text-[51px] md:text-[71px] leading-none">
-                <span>C-Form </span>Automation{" "}
+              <span className="text-transparent bg-gradient-to-tr bg-clip-text from-text-grad-1 to-text-grad-2">
+                    C-Form
+                  </span>                Automation{" "}
               </h2>
               <h3 className="font-semibold leading-none text-[29px]">
                 Say Goodbye to Manual C-Forms
@@ -65,7 +65,9 @@ function CForm() {
           <div className="flex flex-col gap-10">
             <div className="px-10 py-2">
               <h2 className="font-bold md:text-[74px] leading-tight text-[40px]">
-                Trust us, its truly a matter of just <span>one click</span>.
+                Trust us, its truly a matter of just  <span className="text-transparent bg-gradient-to-tr bg-clip-text from-text-grad-1 to-text-grad-2">
+                    one click.
+                  </span>
               </h2>
               <div>
                 <div className="grid md:grid-cols-3 grid-flow-row gap-5  mt-20">

@@ -14,7 +14,6 @@ import { useState } from 'react';
 
 export default function Carousal() {
     const [testimonialsData, setTestimonialsData] = useState(testimonials);
-    console.log(testimonialsData)
   return (
     <div className='relative'>
 

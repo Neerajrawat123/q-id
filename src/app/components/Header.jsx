@@ -23,8 +23,10 @@ function Header() {
           <div className="flex gap-10 px-5 justify-center flex-col md:flex-row">
             <div className="md:w-1/2 px-[10px] flex flex-col justify-center">
               <h2 className="sm:text-[70px] text-[53px] font-bold leading-none text-white">
-                <span>secure,</span>
-                easy,
+                <span className="text-transparent bg-gradient-to-tr bg-clip-text from-text-grad-1 to-text-grad-2">
+                  secure
+                </span>{" "}
+                , easy,
                 <br />
                 and always
                 <br /> with you
@@ -49,37 +51,32 @@ function Header() {
             <div className="md:w-1/2">
               <img
                 className="w-[89%]"
-                src="./images/fsgdh43_2-e1684067541108.png"
+                src="/images/fsgdh43_2-e1684067541108.png"
                 alt=""
               />
             </div>
           </div>
 
           <div className="md:hidden px-[30px] ">
+            <div className=" flex gap-6 mb-4">
+              <div className="border flex w-[156px] mt-[-20px] justify-center items-center font-semibold  border-card-bord  bg-card-1 rounded-[20px] h-[61px] shadow-small-card-1">
+                <h2 className=" text-white leading-none text-[24px]  mb-3 mt-1 ">
+                  Manage
+                </h2>
+              </div>
 
-
-          <div className=" flex gap-6 mb-4">
-            <div className="border flex w-[156px] mt-[-20px] justify-center items-center font-semibold  border-card-bord  bg-card-1 rounded-[20px] h-[61px] shadow-small-card-1">
-              <h2 className=" text-white leading-none text-[24px]  mb-3 mt-1 ">
-                Manage
+              <div className="border flex justify-center items-center w-[156px]  leading-none text-[24px] font-semibold  border-card-bord h-[61px] bg-card-2 rounded-[20px] shadow-small-card-2">
+                <h2 className=" text-white leading-none text-[24px]  mb-3 mt-1 ">
+                    Share
+              </h2>
+              </div>
+            </div>
+            <div className="my-4">
+              <h2 className="font-bold text-[29px] leading-[1.1] text-white">
+                Two Base elements of Identity ecosystem
               </h2>
             </div>
-
-            <div className="border flex justify-center items-center w-[156px]  leading-none text-[24px] font-semibold  border-card-bord h-[61px] bg-card-2 rounded-[20px] shadow-small-card-2">
-              <h2 className=" text-white leading-none text-[24px]  mb-3 mt-1 ">
-                Share
-              </h2>
-            </div>
           </div>
-          <div className="my-4">
-            <h2 className="font-bold text-[29px] leading-[1.1] text-white">
-            Two Base elements of Identity ecosystem
-
-            </h2>
-          </div>
-          </div>
-
-
 
           <div className="gap-7 hidden md:flex  mt-[-35px] ">
             <div className="mb-5 ">
@@ -128,7 +125,7 @@ function Header() {
                 <h2 className="text-[40px] font-bold text-p-col leading-10">
                   Your true identity,
                   <br />
-                  <span className="bg-gradient-to-r text-transparent bg-clip-text from-green-200 to-green-500">
+                  <span className="bg-gradient-to-r text-transparent bg-clip-text from-green-200 to-green-400">
                     managed
                   </span>{" "}
                   with ease.
@@ -145,9 +142,9 @@ function Header() {
 
               <div>
                 <h2 className="text-[40px] font-bold text-p-col leading-10">
-                  <span className="bg-gradient-to-r text-transparent bg-clip-text from-orange-200 to-orange-500">
+                <span className="text-transparent bg-gradient-to-tr bg-clip-text from-text-grad-1 to-text-grad-2">
                     share
-                  </span>{" "}
+                  </span>
                   your identity with ease,
                   <br />
                   qid has got you covered!
@@ -165,7 +162,6 @@ function Header() {
 
           {/* for mobile screen */}
 
-
           <div className="flex md:hidden gap-5 px-[30px]">
             <div className="flex flex-col justify-center items-center w-24">
               <div className="w-[5px] h-[470px] sm:h-[304px] bg-gradient-to-b from-green-grad-1  to-green-grad-2"></div>
@@ -173,11 +169,11 @@ function Header() {
               <div className="w-[5px] h-[286px] sm:h-[200px] sm:mt-32 mt-8 bg-gradient-to-b  from-orange-grad-1 to-black"></div>
             </div>
             <div className="flex flex-col gap-14">
-            <div>
+              <div>
                 <h2 className="text-[40px] font-bold text-p-col leading-10">
                   Your true identity,
                   <br />
-                  <span className="bg-gradient-to-r text-transparent bg-clip-text from-green-200 to-green-500">
+                  <span className="bg-gradient-to-r text-transparent bg-clip-text from-green-200 to-green-400">
                     managed
                   </span>{" "}
                   with ease.
@@ -193,23 +189,22 @@ function Header() {
               </div>
 
               <div>
-              <h2 className="text-[40px] font-bold text-p-col leading-10">
-                  <span className="bg-gradient-to-r text-transparent bg-clip-text from-orange-200 to-orange-500">
-                    share
-                  </span>{" "}
+                <h2 className="text-[40px] font-bold text-p-col leading-10">
+                <span className="text-transparent bg-gradient-to-tr bg-clip-text from-text-grad-1 to-text-grad-2">
+                    share 
+                  </span> {' '}
                   your identity with ease,
                   <br />
                   qid has got you covered!
                 </h2>
                 <p className="mt-7 text-sec-text-col font-semibold text-[20px]  leading-[24px]">
-                Sharing IDs with qid is simple and convenient. Just add the ID
+                  Sharing IDs with qid is simple and convenient. Just add the ID
                   to your qid profile and share it with anyone, anytime,
                   anywhere. No need to carry physical IDs or worry about losing
                   them.
                 </p>
               </div>
             </div>
-
           </div>
         </div>
         <div className="h-[80vh] w-full   px-[30px] min-h-screen font-primary-font  bg-cover bg-tertiary-pattern  bg-center pt-[6px]">
@@ -339,8 +334,9 @@ function Header() {
               <div className=" text-white mt-20 px-[30px]">
                 <div className="flex flex-col justify-center items-center">
                   <h2 className="font-bold text-[64px] leading-none text-center">
-                    <span>Identified </span>
-                    by qid
+                  <span className="text-transparent bg-gradient-to-tr bg-clip-text from-text-grad-1 to-text-grad-2">
+                    Identified
+                  </span> {' '}                    by qid
                   </h2>
                   <h3 className="font-semibold text-[24px] mt-5 text-center">
                     Let’s dive into the real stories of how our service has

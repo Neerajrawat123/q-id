@@ -34,7 +34,9 @@ module.exports = {
         'green-grad-2': '#4D7603',
         'orange-grad-1': '#CF5924 ',
         'menu-col': '#E7E7E7',
-        'menu': '#202020'
+        'menu': '#202020',
+        'text-grad-1': ' #ffb900',
+        'text-grad-2': '#ff7730'
       },
       fontFamily: {
         'primary-font': ['Raleway', 'sans-serif'],
