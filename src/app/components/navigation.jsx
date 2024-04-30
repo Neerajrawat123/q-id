@@ -1,8 +1,12 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
+import { usePathname} from 'next/navigation';
+
 
 export default function Navigation() {
+    const path = usePathname();
+  console.log(path);
   const [isExpand, setIsExpand] = useState(false);
   const handleExpand = (e) => {
     e.preventDefault();
@@ -27,7 +31,7 @@ export default function Navigation() {
                 <svg
                   aria-hidden="true"
                   role="presentation"
-                  class="fill-menu-col e-font-icon-svg e-eicon-close"
+                  class="fill-menu-col md:hidden"
                   viewBox="0 0 1000 1000"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -37,7 +41,7 @@ export default function Navigation() {
                 <svg
                   aria-hidden="true"
                   role="presentation"
-                  className="fill-menu-col e-font-icon-svg e-eicon-menu-bar"
+                  className="fill-menu-col md:hidden block e-font-icon-svg e-eicon-menu-bar"
                   viewBox="0 0 1000 1000"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -48,17 +52,17 @@ export default function Navigation() {
           </div>
           <div className="flex-1 md:flex hidden ">
             <div className="flex gap font-semibold justify-end">
-              <Link className="px-5 hover:text-white py-3" href={"/app"}>
+              <Link className={path.includes('app') ? 'text-white px-5 hover:text-white py-3' : 'px-5 hover:text-white py-3'} href={"/app"}>
                 App
               </Link>
               <Link
-                className="px-5 hover:text-white py-3"
+                className={path.includes('home') ? 'text-white px-5 hover:text-white py-3' : 'px-5 hover:text-white py-3'}
                 href={"/home/c-form-automation-for-hotels"}
               >
                 C-form Pro
               </Link>
 
-              <Link className="px-5 hover:text-white py-3" href={"/support"}>
+              <Link className={path.includes('support') ? 'text-white px-5 hover:text-white py-3' : 'px-5 hover:text-white py-3'} href={"/support"}>
                 Contact
               </Link>
             </div>

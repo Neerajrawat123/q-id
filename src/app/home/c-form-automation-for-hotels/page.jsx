@@ -1,9 +1,13 @@
+'use client'
 import React from "react";
 import Navigation from "../../components/navigation";
 import Link from "next/link";
 import Footer from "@/app/components/Footer";
+import { usePathname} from 'next/navigation';
 
 function CForm() {
+  const path = usePathname();
+  console.log(path);
   return (
     <>
       <Navigation />
@@ -142,20 +146,30 @@ function CForm() {
         <div className="max-w-[1140px] mx-auto w-full font-primary-font px-7 mt-5 overflow-hidden bg-black z-20  text-white">
           <div className="p-[30px] rounded-[30px] flex flex-col border gap-6 border-card-bord">
             <div>
-              <h2 className="font-semibold leading-none text-[46px]">What is C-Form?</h2>
+              <h2 className="font-semibold leading-none text-[46px]">
+                What is C-Form?
+              </h2>
             </div>
             <div className="flex flex-col gap-5 leading-auto text-[22px]">
-                <p>In India, a C-Form is a mandatory document required under the Foreigners’ Registration Act, 1946.</p>
-                <p>It serves as a record of the stay of foreign nationals within the country.</p>
-                <p>Hotels, guesthouses, and other accommodation providers are legally obligated to submit C-Forms to local authorities for every foreign guest’s stay.</p>
+              <p>
+                In India, a C-Form is a mandatory document required under the
+                Foreigners’ Registration Act, 1946.
+              </p>
+              <p>
+                It serves as a record of the stay of foreign nationals within
+                the country.
+              </p>
+              <p>
+                Hotels, guesthouses, and other accommodation providers are
+                legally obligated to submit C-Forms to local authorities for
+                every foreign guest’s stay.
+              </p>
             </div>
             <div>
-            <Link
+              <Link
                 className="font-semibold border border-card-bord text-lg leading-tight px-6 max-w-fit py-5 rounded-[50px] bg-black flex gap-2 items-center mt-6 text-white"
                 href={"/"}
               >
-                
-
                 <span>Read More</span>
               </Link>
             </div>

@@ -133,7 +133,7 @@ function Contact() {
                   />
                 </div>
                 <div className="w-full flex justify-end ">
-                  <button className="px-10 py-5 bg-white text-black rounded-[40px] leading-4 text-[14px]">
+                  <button className="px-10 py-5 bg-white hover:bg-blue hover:text-white text-black rounded-[40px] leading-4 text-[14px]">
                     <span className="font-semibold">Submit</span>
                   </button>
                 </div>

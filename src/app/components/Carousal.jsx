@@ -9,8 +9,12 @@ import 'swiper/css/navigation';
 import Card from './Card';
 import SlideNextButton from './SlideNextButton';
 import SlidePrevButton from './SlidePrevButton';
+import { testimonials } from '../utils/testimonials';
+import { useState } from 'react';
 
 export default function Carousal() {
+    const [testimonialsData, setTestimonialsData] = useState(testimonials);
+    console.log(testimonialsData)
   return (
     <div className='relative'>
 
@@ -29,10 +33,17 @@ export default function Carousal() {
       }}
       navigation
     >
-      <SwiperSlide><Card /></SwiperSlide>
-      <SwiperSlide><Card /></SwiperSlide>
-      <SwiperSlide><Card /></SwiperSlide>
-      <SwiperSlide><Card /></SwiperSlide>
+     {
+        testimonialsData.map((testimonial, index) => (
+
+            <SwiperSlide key={index} ><Card data={testimonial}/></SwiperSlide>
+
+
+        ))
+
+     }
+
+      
       <div className='swiper-button-next'><SlideNextButton /></div>
       <div className='swiper-button-prev'><SlidePrevButton /></div>
 
