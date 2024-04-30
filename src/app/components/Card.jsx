@@ -1,10 +1,10 @@
 import React from "react";
 
 function Card({data}) {
-   const {name, position, testimonial, imageUrl} = data
+   const {name, position, testimonial, imageUrl} = data;
       return (
-    <div className=" border rounded-[30px] border-card-bord ">
-      <div className="p-[36px] flex flex-col gap-10">
+    <div className=" border rounded-[30px] md:h-[450px] border-card-bord ">
+      <div className="p-[36px] flex flex-col gap-8">
         <div>
           <div className="w-[100px] h-[100px] rounded-full overflow-hidden">
             <img src={imageUrl} alt="" />

@@ -144,7 +144,7 @@ function Header() {
                 <h2 className="text-[40px] font-bold text-p-col leading-10">
                 <span className="text-transparent bg-gradient-to-tr bg-clip-text from-text-grad-1 to-text-grad-2">
                     share
-                  </span>
+                  </span>{' '}
                   your identity with ease,
                   <br />
                   qid has got you covered!
