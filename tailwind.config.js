@@ -33,13 +33,17 @@ module.exports = {
         'green-grad-1': '#93FB70',
         'green-grad-2': '#4D7603',
         'orange-grad-1': '#CF5924 ',
+        'menu-col': '#E7E7E7',
+        'menu': '#202020'
       },
       fontFamily: {
         'primary-font': ['Raleway', 'sans-serif'],
       },
       boxShadow:{
         'card-1-shad': '-4px -13px 99px -29px rgba(77.54021739130434, 225.75, 0, 0.34)',
-        'card-2-shad': '-16px 49px 68px -18px rgba(226, 186.00000000000014, 0, 0.18)'
+        'card-2-shad': '-16px 49px 68px -18px rgba(226, 186.00000000000014, 0, 0.18)',
+        'small-card-1': '2px -13px 99px -5px rgba(77.54021739130434, 225.75, 0, 0.34)',
+        'small-card-2': '-2px -13px 59px -19px rgba(225.75, 197.28586956521735, 0, 0.34)'
       }
     },
   },

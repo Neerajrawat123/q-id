@@ -62,7 +62,7 @@ function Footer() {
             <div>
               <h2 className="text-[20px] font-semibold">oneqid Technologies private limited</h2>
             </div>
-            <div className="w-full flex justify-center  ">
+            <div className="flex w-full md:max-w-fit justify-center text-center ">
                 <span className="w-8 h-8 flex items-center justify-center bg-white rounded-full">
 
               <svg

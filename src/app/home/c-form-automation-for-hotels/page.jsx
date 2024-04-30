@@ -1,6 +1,7 @@
 import React from "react";
 import Navigation from "../../components/navigation";
 import Link from "next/link";
+import Footer from "@/app/components/Footer";
 
 function CForm() {
   return (
@@ -60,7 +61,7 @@ function CForm() {
           <div className="flex flex-col gap-10">
             <div className="px-10 py-2">
               <h2 className="font-bold md:text-[74px] leading-tight text-[40px]">
-                Trust us, it's truly a matter of just <span>one click</span>.
+                Trust us, its truly a matter of just <span>one click</span>.
               </h2>
               <div>
                 <div className="grid md:grid-cols-3 grid-flow-row gap-5  mt-20">
@@ -74,8 +75,8 @@ function CForm() {
 
                   <div className="p-[30px] border border-card-bord rounded-[30px]">
                     <div>
-                      <h2 className="font-semibold leading-tight text-[32px]">
-                        Qid's AI engine extracts details like Passport Number,
+                      <h2 className="ffont-semibold leading-tight text-[32px]">
+                        Qids AI engine extracts details like Passport Number,
                         Visa Number, Name, Country, and Photos from the images
                       </h2>
                     </div>
@@ -100,7 +101,7 @@ function CForm() {
             <div className="flex md:w-2/3  w-full justify-center flex-col pt-3">
               <div className="flex  flex-col gap-4">
                 <h2 className="font-semibold leading-none md:text-[46px] text-[36px]">
-                  Elevate C-Form Processing with qid's State-of-the-Art Chrome
+                  Elevate C-Form Processing with qids State-of-the-Art Chrome
                   Extension
                 </h2>
                 <h3 className="font-medium text-form leading-none text-[1.27rem]">
@@ -161,6 +162,7 @@ function CForm() {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 }

@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from "react";
 import Navigation from "../components/navigation";
+import Footer from "../components/Footer";
 
 function Contact() {
 
@@ -74,7 +75,7 @@ function Contact() {
               </div>
             </div>
 
-            <div className="border-[1px] border-form-bord text-[15px] bg-black text-form-bord w-full md:w-[45%] sm:w-[80%] rounded-[20px] p-[50px]">
+            <div className="border-[1px] w-full border-form-bord text-[15px] bg-black text-form-bord  md:w-[45%] sm:w-[80%] rounded-[20px] p-[30px] md:p-[50px]">
               <form className="flex flex-col gap-6" onSubmit={handleSubmit} method="post">
                 <div className="flex flex-col gap-1">
                   <label className="text-form " htmlFor="name">
@@ -142,6 +143,7 @@ function Contact() {
           <div></div>
         </div>
       </main>
+      <Footer/>
     </>
   );
 }

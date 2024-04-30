@@ -6,7 +6,7 @@ function Header() {
   return (
     <div className="w-full text-white">
       <div className=" h-screen text-white font-primary-font w-full object-fill bg-cover bg-main-pattern flex justify-center items-center  border-b-[1px] border-gray-800">
-        <div className="bg-transparent flex items-initial flex-col gap-5 ">
+        <div className="bg-transparent px-5 flex items-initial flex-col gap-5 ">
           <p className="text-white text-[52px] sm:text-[71px] text-center  leading-none font-bold">
             every person deserves to know and be known by their true identity
           </p>
@@ -20,8 +20,8 @@ function Header() {
       </div>
       <div className="bg-secondary-pattern bg-[length:100%] bg-blend-overlay bg-grid-col w-full pt-20  ">
         <div className=" max-w-[1140px] px-1  mx-auto justify-center  ">
-          <div className="flex gap-10 px-5 justify-center flex-col">
-            <div className=" px-[10px] ">
+          <div className="flex gap-10 px-5 justify-center flex-col md:flex-row">
+            <div className="md:w-1/2 px-[10px] flex flex-col justify-center">
               <h2 className="sm:text-[70px] text-[53px] font-bold leading-none text-white">
                 <span>secure,</span>
                 easy,
@@ -46,7 +46,7 @@ function Header() {
                 </span>
               </Link>
             </div>
-            <div>
+            <div className="md:w-1/2">
               <img
                 className="w-[89%]"
                 src="./images/fsgdh43_2-e1684067541108.png"
@@ -55,17 +55,17 @@ function Header() {
             </div>
           </div>
 
-          <div className="sm:hidden px-[30px] ">
+          <div className="md:hidden px-[30px] ">
 
 
           <div className=" flex gap-6 mb-4">
-            <div className="border flex w-[156px] mt-[-20px] justify-center items-center font-semibold  border-card-bord  bg-card-1 rounded-[20px] h-[61px] shadow-card-1-shad">
+            <div className="border flex w-[156px] mt-[-20px] justify-center items-center font-semibold  border-card-bord  bg-card-1 rounded-[20px] h-[61px] shadow-small-card-1">
               <h2 className=" text-white leading-none text-[24px]  mb-3 mt-1 ">
                 Manage
               </h2>
             </div>
 
-            <div className="border flex justify-center items-center w-[156px]  leading-none text-[24px] font-semibold  border-card-bord h-[61px] bg-card-2 rounded-[20px] shadow-card-2-shad">
+            <div className="border flex justify-center items-center w-[156px]  leading-none text-[24px] font-semibold  border-card-bord h-[61px] bg-card-2 rounded-[20px] shadow-small-card-2">
               <h2 className=" text-white leading-none text-[24px]  mb-3 mt-1 ">
                 Share
               </h2>
@@ -81,13 +81,13 @@ function Header() {
 
 
 
-          <div className="flex gap-7 hidden flex-col  mt-[-35px] ">
+          <div className="gap-7 hidden md:flex  mt-[-35px] ">
             <div className="mb-5 ">
-              <h2 className="text-[55px] leading-tight text-white font-bold">
+              <h2 className="text-[55px] leading-tight pr-9 text-white font-bold">
                 Two Base elements of Identity ecosystem
               </h2>
             </div>
-            <div className="flex gap-6 flex-col  ">
+            <div className="flex gap-6  ">
               <div className="flex flex-col border h-[280px] w-[280px] mt-[-25px]  border-card-bord py-3 px-4 bg-card-1 rounded-3xl shadow-card-1-shad">
                 <h2 className="font-semibold leading-tight text-[51px]  text-card-bord">
                   1
@@ -115,15 +115,15 @@ function Header() {
             </div>
           </div>
 
-          <div className="flex gap-5 hidden font-primary-font">
+          <div className="gap-5 hidden md:flex  font-primary-font">
             <div className="flex gap-4 flex-col justify-center items-center w-24">
-              <div className="w-1 h-[179px] bg-gradient-to-b from-black from-30% to-grad-col"></div>
+              <div className="w-[5px] h-[147px] bg-gradient-to-b from-black from-0% to-30% to-green-grad-1"></div>
               <span className="h-[1px] w-12 bg-gray-600"> </span>
-              <div className="w-1 h-[260px]  bg-red-500"></div>
+              <div className="w-1 h-[260px]  bg-gradient-to-b from-green-grad-1 from-0% via-green-grad-2 via-30% to-60% to-orange-grad-1"></div>
               <span className="h-[1px] w-12 bg-gray-600"> </span>
-              <div className="w-1 h-[179px]  bg-red-500"></div>
+              <div className="w-1 h-[179px]   bg-gradient-to-b from-orange-grad-1 to to-black"></div>
             </div>
-            <div className="flex flex-col justify-between pb-10">
+            <div className="flex flex-col justify-between pb-10 pt-32">
               <div>
                 <h2 className="text-[40px] font-bold text-p-col leading-10">
                   Your true identity,
@@ -166,11 +166,11 @@ function Header() {
           {/* for mobile screen */}
 
 
-          <div className="flex gap-5 px-[30px]">
+          <div className="flex md:hidden gap-5 px-[30px]">
             <div className="flex flex-col justify-center items-center w-24">
-              <div className="w-[5px] h-[470px] bg-gradient-to-b from-green-grad-1  to-green-grad-2"></div>
-              <div className="w-[5px] h-[104px]  bg-gradient-to-b from-green-grad-2  to-orange-grad-1"></div>
-              <div className="w-[5px] h-[286px] mt-8 bg-gradient-to-b  from-orange-grad-1 to-black"></div>
+              <div className="w-[5px] h-[470px] sm:h-[304px] bg-gradient-to-b from-green-grad-1  to-green-grad-2"></div>
+              <div className="w-[5px] h-[104px]   bg-gradient-to-b from-green-grad-2  to-orange-grad-1"></div>
+              <div className="w-[5px] h-[286px] sm:h-[200px] sm:mt-32 mt-8 bg-gradient-to-b  from-orange-grad-1 to-black"></div>
             </div>
             <div className="flex flex-col gap-14">
             <div>
@@ -227,7 +227,7 @@ function Header() {
 
         <div className="bg-secondary-pattern bg-[length:100%] bg-blend-overlay font-primary-font bg-contain bg-grid-col w-full pt-3 pb-9  ">
           <div className=" max-w-[1140px] w-full   mx-auto justify-center  ">
-            <div className="px-[30px]">
+            <div className="px-[30px] md:flex md:flex-col gap-5">
               <div className="w-full flex md:flex-row flex-col  gap-5">
                 <div className="flex flex-col border md:w-[31.5%] h-full bg-black  border-card-bord  p-[25px] gap-[20px]  rounded-[30px]">
                   <div className="w-full  overflow-hidden rounded-[30px]">
@@ -256,7 +256,7 @@ function Header() {
                       Business Analytics
                     </h2>
                   </div>
-                  <div className="rounded-[25px] hidden">
+                  <div className="rounded-[25px] hidden md:block">
                     <img src="/images/Asset-7.png" alt="" />
                   </div>
 
@@ -273,7 +273,7 @@ function Header() {
                   </div>
                 </div>
               </div>
-              <div className="flex gap-5 flex-col">
+              <div className="flex gap-5 flex-col md:flex-row">
                 <div className="flex flex-col border md:w-[31.5%] h-full bg-black  border-card-bord  p-[25px] gap-[20px]  rounded-[30px]">
                   <div className="flex flex-col text-white gap-5 ">
                     <h2 className="font-semibold text-[24px]">
@@ -285,7 +285,7 @@ function Header() {
                     </h3>
                   </div>
                 </div>
-                <div className="flex gap-5 w-full mt-5 flex-col">
+                <div className="flex gap-5 w-full mt-5 flex-col md:flex-row">
                   <div className="flex flex-col border md:w-1/2 h-full bg-black  border-card-bord  p-[25px] gap-[20px]  rounded-[30px]">
                     <div className="flex flex-col text-white gap-5 ">
                       <h2 className="font-semibold text-[24px]">
