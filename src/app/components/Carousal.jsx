@@ -13,21 +13,26 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 export default function Carousal() {
+  console.log(process.env.NEXT_PUBLIC_DATABASE_URL);
   const [testimonialsData, setTestimonialsData] = useState([]);
   useEffect(() => {
-
-    const getTestimonials  = async () =>{
-
-      const response = await axios.get(`${process.env.STRAPI_BACKEND}/api/testimonials`);
-      if(response.status === 200){
-        console.log(response)
-        setTestimonialsData(response.data.data)
+    const getTestimonials = async () => {
+      const response = await axios.get(
+        `${process.env.NEXT_PUBLIC_DATABASE_URL}/api/testimonials`,
+        {
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }
+      );
+      if (response.status === 200) {
+        console.log(response.data.data);
+        setTestimonialsData(response.data.data);
       }
-    }
+    };
 
-
-    getTestimonials()
-  }, [testimonialsData]);
+    getTestimonials();
+  }, []);
 
   return (
     <div className="relative">
@@ -46,7 +51,7 @@ export default function Carousal() {
       >
         {testimonialsData.map((testimonial, index) => (
           <SwiperSlide key={index}>
-            <Card data={testimonial} />
+            <Card data={testimonial.attributes} />
           </SwiperSlide>
         ))}
 
